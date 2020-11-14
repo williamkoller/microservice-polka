@@ -1,0 +1,12 @@
+{
+  "service": {
+    "name": "UserService",
+    "tags": [
+      "node"
+    ],
+    "check": {
+      "TCP": "127.0.0.1:8000",
+      "interval": "3s"
+    }
+  }
+}

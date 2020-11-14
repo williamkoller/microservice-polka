@@ -1,0 +1,12 @@
+{
+  "service": {
+    "name": "JsonServer",
+    "tags": [
+      "node"
+    ],
+    "check": {
+      "http": "http://localhost:3000/",
+      "interval": "3s"
+    }
+  }
+}

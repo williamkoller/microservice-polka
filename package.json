@@ -4,12 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon server.js",
+    "service": "nodemon ./services/UserService.js",
+    "monitor": "nodemon ./services/MonitorService.js",
+    "json:up": "json-server --watch db.json"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@polka/parse": "^1.0.0-next.0",
+    "axios": "^0.21.0",
+    "cote": "^1.0.0",
     "polka": "^0.5.2"
+  },
+  "devDependencies": {
+    "json-server": "^0.16.2",
+    "nodemon": "^2.0.6"
   }
 }

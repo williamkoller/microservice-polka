@@ -1,0 +1,13 @@
+{
+  "service": {
+    "name": "ApiGateWay",
+    "tags": [
+      "node"
+    ],
+    "check": {
+      "http": "http://localhost:3333/",
+      "Header": { "Content-Type":  ["application/json"]},
+      "interval": "3s"
+    }
+  }
+}
